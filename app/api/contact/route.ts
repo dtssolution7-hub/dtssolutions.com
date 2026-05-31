@@ -1,0 +1,23 @@
+export const runtime = "edge";
+
+import { NextResponse } from "next/server";
+
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+
+    return NextResponse.json({
+      success: true,
+      message: "Inquiry received successfully.",
+      data: body,
+    });
+  } catch {
+    return NextResponse.json(
+      {
+        success: false,
+        message: "Invalid request body.",
+      },
+      { status: 400 }
+    );
+  }
+}
