@@ -1,8 +1,8 @@
 export const seoDefaults = {
   siteName: "DTS Solutions",
   baseUrl: "https://dtssolutions.com",
-  defaultTitle: "DTS Solutions | Secure, Scalable Digital Technology Solutions",
+  defaultTitle: "DTS Solutions | IT, Cloud, Security & Business Technology Services",
   defaultDescription:
-    "DTS Solutions delivers cloud, cybersecurity, software, automation, data, and enterprise technology solutions for modern businesses.",
+    "DTS Solutions helps businesses modernize IT operations with managed support, cloud services, cybersecurity, infrastructure, automation, and business technology solutions.",
   ogImage: "/opengraph-image",
 } as const;

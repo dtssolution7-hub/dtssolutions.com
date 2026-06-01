@@ -1,6 +1,6 @@
 export const company = {
   name: "DTS Solutions",
-  tagline: "Secure, scalable digital technology solutions for modern businesses",
+  tagline: "Practical technology solutions for growing businesses",
   website: "https://dtssolutions.com",
   phone: "+1 (000) 000-0000",
   emails: {

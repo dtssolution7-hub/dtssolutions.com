@@ -1,158 +1,107 @@
 export const serviceOverview = [
   {
-    title: "Cloud & Platform Engineering",
-    desc: "Scalable cloud foundations, landing zones, platform tooling, and resilient architecture patterns.",
+    title: "Managed IT Support",
+    desc: "Helpdesk, user support, device troubleshooting, system maintenance, and everyday technology assistance.",
+    href: "#managed-it",
+  },
+  {
+    title: "Cloud & Microsoft 365",
+    desc: "Email, Teams, SharePoint, OneDrive, cloud migration, identity, and productivity platform support.",
     href: "#cloud",
   },
   {
-    title: "Automation & DevOps",
-    desc: "CI/CD pipelines, infrastructure automation, release controls, and faster delivery with consistency.",
-    href: "#devops",
+    title: "Cybersecurity Protection",
+    desc: "Account protection, endpoint security, MFA, awareness, monitoring, and practical risk reduction.",
+    href: "#cybersecurity",
   },
   {
-    title: "Observability & Reliability",
-    desc: "Monitoring, alerting, telemetry, uptime engineering, and operational visibility across systems.",
-    href: "#reliability",
+    title: "Network & Infrastructure",
+    desc: "Wi-Fi, firewall, switching, internet reliability, servers, endpoints, and office technology setup.",
+    href: "#infrastructure",
   },
   {
-    title: "Cybersecurity Engineering",
-    desc: "Security-by-design across infrastructure, applications, access control, and delivery systems.",
-    href: "#security",
+    title: "Backup & Disaster Recovery",
+    desc: "Backup coverage, restore testing, continuity planning, and recovery readiness for critical systems.",
+    href: "#backup",
   },
   {
-    title: "Identity & Access Patterns",
-    desc: "Least-privilege architecture, access governance, and secure identity design across environments.",
-    href: "#identity",
-  },
-  {
-    title: "DevSecOps Enablement",
-    desc: "Embed security checks and policy enforcement into engineering pipelines without slowing delivery.",
-    href: "#devsecops",
-  },
-  {
-    title: "Software Engineering",
-    desc: "Modern web platforms, enterprise applications, APIs, and scalable software systems.",
-    href: "#software",
-  },
-  {
-    title: "Enterprise Applications",
-    desc: "Workflow platforms, internal systems, process enablement, and enterprise-grade integrations.",
-    href: "#enterprise",
-  },
-  {
-    title: "Data Platforms & Analytics",
-    desc: "Data architecture, pipelines, governance-ready models, analytics foundations, and reporting systems.",
-    href: "#data",
+    title: "Business Automation",
+    desc: "Workflow automation, forms, reporting, dashboards, integrations, and process improvement.",
+    href: "#automation",
   },
 ] as const;
 
 export const serviceSections = [
   {
+    id: "managed-it",
+    title: "Managed IT Support",
+    intro:
+      "DTS Solutions provides dependable IT support that keeps teams productive, devices healthy, and business systems running smoothly.",
+    points: [
+      "Remote and onsite support coordination",
+      "User, device, and application troubleshooting",
+      "Routine maintenance and patching guidance",
+      "Technology support for growing teams",
+    ],
+  },
+  {
     id: "cloud",
-    title: "Cloud & Platform Engineering",
+    title: "Cloud & Microsoft 365",
     intro:
-      "We design and build cloud foundations that support scale, security, and operational clarity from day one.",
+      "We help businesses move, manage, and secure cloud productivity platforms with clear setup and practical support.",
     points: [
-      "Cloud architecture and landing zones",
-      "Platform engineering foundations",
-      "Environment standardization",
-      "Scalable infrastructure patterns",
+      "Microsoft 365 email and collaboration setup",
+      "OneDrive, SharePoint, and Teams configuration",
+      "Cloud migration planning and execution",
+      "User access, licensing, and identity support",
     ],
   },
   {
-    id: "devops",
-    title: "Automation & DevOps",
+    id: "cybersecurity",
+    title: "Cybersecurity Protection",
     intro:
-      "We streamline delivery through automation, release pipelines, repeatable infrastructure, and operational controls.",
+      "We strengthen your technology environment with practical security controls that reduce common business risks.",
     points: [
-      "CI/CD pipeline design",
-      "Infrastructure as code",
-      "Environment automation",
-      "Delivery workflow optimization",
+      "MFA and identity protection",
+      "Endpoint and device security guidance",
+      "Email and account protection",
+      "Security awareness and access review",
     ],
   },
   {
-    id: "reliability",
-    title: "Observability & Reliability",
+    id: "infrastructure",
+    title: "Network & Infrastructure",
     intro:
-      "We improve system stability with telemetry, alerting, performance visibility, and reliability engineering practices.",
+      "We improve the foundations your business depends on: internet, Wi-Fi, firewalls, endpoints, servers, and office systems.",
     points: [
-      "Monitoring and alerting strategy",
-      "Operational dashboards",
-      "Reliability engineering practices",
-      "Incident visibility and readiness",
+      "Office network and Wi-Fi improvement",
+      "Firewall and connectivity planning",
+      "Endpoint and server support",
+      "Infrastructure documentation and cleanup",
     ],
   },
   {
-    id: "security",
-    title: "Cybersecurity Engineering",
+    id: "backup",
+    title: "Backup & Disaster Recovery",
     intro:
-      "We integrate security into architecture, delivery, and operations to reduce exposure across the full stack.",
+      "We help protect your business data with backup planning, recovery checks, and continuity-focused technology design.",
     points: [
-      "Secure system architecture",
-      "Infrastructure hardening",
-      "Application security practices",
-      "Operational risk reduction",
+      "Backup coverage review",
+      "Restore testing and recovery planning",
+      "Business continuity recommendations",
+      "Cloud and endpoint backup guidance",
     ],
   },
   {
-    id: "identity",
-    title: "Identity & Access Patterns",
+    id: "automation",
+    title: "Business Automation",
     intro:
-      "We design secure identity and access patterns that support governance, usability, and least-privilege access.",
+      "We simplify repeated work with lightweight automations, better workflows, dashboards, and connected systems.",
     points: [
-      "Access architecture design",
-      "Least-privilege controls",
-      "Identity federation patterns",
-      "Role and permission strategy",
-    ],
-  },
-  {
-    id: "devsecops",
-    title: "DevSecOps Enablement",
-    intro:
-      "We embed security into engineering pipelines so teams maintain delivery speed while improving compliance and control.",
-    points: [
-      "Pipeline security integration",
-      "Policy and control automation",
-      "Security testing in delivery flow",
-      "Developer-friendly guardrails",
-    ],
-  },
-  {
-    id: "software",
-    title: "Software Engineering",
-    intro:
-      "We build modern applications that are maintainable, scalable, and aligned to enterprise operational needs.",
-    points: [
-      "Web and application engineering",
-      "API and backend architecture",
-      "Frontend systems and UX delivery",
-      "Scalable application design",
-    ],
-  },
-  {
-    id: "enterprise",
-    title: "Enterprise Applications",
-    intro:
-      "We modernize internal systems and business applications that support operations, teams, and organizational growth.",
-    points: [
-      "Workflow system development",
-      "Internal tools and portals",
-      "Enterprise process enablement",
-      "Business system modernization",
-    ],
-  },
-  {
-    id: "data",
-    title: "Data Platforms & Analytics",
-    intro:
-      "We design data ecosystems that support reporting, analytics, governance, and trusted decision-making.",
-    points: [
-      "Pipeline and ingestion design",
-      "Analytics platform foundations",
-      "Governance-ready modeling",
-      "Reporting and insight delivery",
+      "Forms and workflow automation",
+      "Reporting and dashboard setup",
+      "Application and system integrations",
+      "Manual process reduction",
     ],
   },
 ] as const;
