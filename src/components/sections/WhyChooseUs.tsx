@@ -1,52 +1,27 @@
-"use client";
-
-const pillars = [
-  {
-    title: "Architecture before acceleration",
-    desc: "We define the right foundation first so delivery remains stable, scalable, and easier to evolve.",
-  },
-  {
-    title: "Security built into the system",
-    desc: "Security is integrated into architecture, workflows, and delivery controls rather than added later.",
-  },
-  {
-    title: "Operational clarity and reliability",
-    desc: "We prioritize visibility, observability, and long-term maintainability in the systems we help shape.",
-  },
-  {
-    title: "Modernization with discipline",
-    desc: "We improve platforms and delivery models in ways that reduce risk instead of creating disruption.",
-  },
-] as const;
+const items = [
+  ["01", "Fast practical support", "We focus on fixing the issue, explaining the cause and preventing repeat problems."],
+  ["02", "Security without confusion", "MFA, backups, access control and endpoint protection are handled in a simple business-friendly way."],
+  ["03", "Cloud tools that work", "Microsoft 365, email, Teams, SharePoint and storage are configured for real daily usage."],
+  ["04", "Clear ownership", "You know what is being handled, what is pending and what needs attention next."],
+];
 
 export function WhyChooseUs() {
   return (
-    <section className="border-y bg-slate-50 py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
-              Why DTS Solutions
-            </div>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 md:text-5xl">
-              Engineering discipline that improves speed, trust, and long-term scalability
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-700">
-              We focus on strong digital foundations that support delivery quality today and resilience tomorrow.
-            </p>
-          </div>
+    <section className="bg-[#07111f] px-6 py-20 text-white">
+      <div className="mx-auto max-w-7xl">
+        <p className="text-sm font-black uppercase tracking-[0.2em] text-teal-300">Why DTS</p>
+        <h2 className="mt-4 max-w-3xl text-4xl font-black md:text-5xl">
+          Built for businesses that need dependable technology, not complicated explanations.
+        </h2>
 
-          <div className="grid gap-6 sm:grid-cols-2">
-            {pillars.map((pillar) => (
-              <div
-                key={pillar.title}
-                className="rounded-[26px] border border-slate-200 bg-white p-7 shadow-sm"
-              >
-                <h3 className="text-xl font-semibold text-slate-950">{pillar.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-700">{pillar.desc}</p>
-              </div>
-            ))}
-          </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
+          {items.map(([num, title, desc]) => (
+            <div key={title} className="rounded-[28px] border border-white/10 bg-white/10 p-7 backdrop-blur">
+              <div className="text-sm font-black text-orange-300">{num}</div>
+              <h3 className="mt-4 text-2xl font-black">{title}</h3>
+              <p className="mt-4 leading-7 text-slate-300">{desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
