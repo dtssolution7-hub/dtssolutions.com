@@ -1,7 +1,7 @@
-<svg width="360" height="72" viewBox="0 0 360 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="72" height="72" rx="18" fill="#0F172A"/>
-  <path d="M18 18H34C46.1503 18 56 27.8497 56 40C56 52.1503 46.1503 62 34 62H18V18Z" fill="#ffffff"/>
-  <path d="M30 28H42C49.732 28 56 34.268 56 42C56 49.732 49.732 56 42 56H30V28Z" fill="#0F172A"/>
-  <text x="90" y="31" fill="#0F172A" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700">Datronix Global</text>
-  <text x="90" y="54" fill="#64748B" font-size="12" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="2">ENGINEERING SECURE, SCALABLE DIGITAL FOUNDATIONS</text>
+<svg width="320" height="70" viewBox="0 0 320 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="70" height="70" rx="18" fill="#07111F"/>
+  <path d="M19 22H36C46 22 53 29 53 35C53 42 46 48 36 48H19V22Z" fill="#2DD4BF"/>
+  <text x="25" y="42" fill="#07111F" font-size="18" font-family="Arial" font-weight="900">D</text>
+  <text x="86" y="31" fill="#0F172A" font-size="26" font-family="Arial" font-weight="800">DTS Solutions</text>
+  <text x="86" y="54" fill="#0F766E" font-size="12" font-family="Arial" font-weight="800" letter-spacing="2">IT SUPPORT • CLOUD • SECURITY</text>
 </svg>

@@ -1,14 +1,14 @@
 {
-  "name": "Datronix Global",
-  "short_name": "Datronix",
-  "description": "Engineering secure, scalable digital foundations.",
+  "name": "DTS Solutions",
+  "short_name": "DTS",
+  "description": "Managed IT support, cloud, cybersecurity and business technology services.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f172a",
+  "background_color": "#07111f",
+  "theme_color": "#0f766e",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/logo.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
