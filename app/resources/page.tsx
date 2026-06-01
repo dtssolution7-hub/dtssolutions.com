@@ -1,141 +1,31 @@
-import Link from "next/link";
-import { featuredInsights, resourceSections } from "@/data/resourcesPage";
+const resources = [
+  ["Security Basics for Growing Businesses", "Start with MFA, password hygiene, backup coverage, endpoint protection and admin access review."],
+  ["Managed IT vs Break-Fix Support", "Understand when reactive support becomes too risky and when predictable managed support makes sense."],
+  ["Microsoft 365 Setup Checklist", "Email, Teams, SharePoint, OneDrive, permissions, retention and onboarding basics."],
+  ["Backup Readiness Checklist", "How to confirm what is backed up, how often, who owns it and whether restores actually work."],
+];
 
 export default function ResourcesPage() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="border-b bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
-          <div className="max-w-3xl">
-            <div className="text-sm font-semibold text-slate-500">Resources</div>
-            <h1 className="mt-3 text-4xl font-extrabold tracking-tight text-slate-950 md:text-6xl">
-              Insights for building secure, scalable, modern digital systems
-            </h1>
-            <p className="mt-6 text-lg text-slate-700 md:text-xl">
-              DTS Solutions shares practical thinking across cloud engineering, software systems,
-              automation, security, and data platforms to help teams make stronger technical decisions.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white hover:opacity-90 transition"
-              >
-                Start a Project
-              </Link>
-              <a
-                href="#featured-insights"
-                className="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition"
-              >
-                Explore Insights
-              </a>
-            </div>
-          </div>
+    <main>
+      <section className="bg-[#07111f] px-6 py-20 text-white">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-teal-300">Resources</p>
+          <h1 className="mt-5 max-w-4xl text-4xl font-black md:text-6xl">Simple technology guidance for better business decisions.</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">Practical topics covering IT support, security, cloud tools, backups and operations.</p>
         </div>
       </section>
 
-      {/* Featured insights */}
-      <section id="featured-insights" className="py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl">
-            <div className="text-sm font-semibold text-slate-500">Featured</div>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
-              Current focus areas
-            </h2>
-            <p className="mt-4 text-slate-700">
-              Focused insight areas around modernization, security, platform engineering, and long-term system reliability.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {featuredInsights.map((item) => (
-              <a
-                key={item.title}
-                href={item.href}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
-              >
-                <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  {item.category}
-                </div>
-                <div className="mt-3 text-lg font-semibold text-slate-950">{item.title}</div>
-                <p className="mt-2 text-sm text-slate-700">{item.desc}</p>
-                <div className="mt-5 text-sm font-semibold text-slate-950">Read topic →</div>
-              </a>
-            ))}
-          </div>
+      <section className="px-6 py-16">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
+          {resources.map(([title, desc]) => (
+            <article key={title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+              <h2 className="text-2xl font-black text-slate-950">{title}</h2>
+              <p className="mt-4 leading-7 text-slate-700">{desc}</p>
+            </article>
+          ))}
         </div>
       </section>
-
-      {/* Resource sections */}
-      <section className="border-y bg-slate-50 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="space-y-8">
-            {resourceSections.map((section) => (
-              <section
-                key={section.id}
-                id={section.id}
-                className="scroll-mt-24 rounded-3xl border border-slate-200 bg-white p-8 md:p-10"
-              >
-                <div className="grid gap-8 lg:grid-cols-[1.1fr_.9fr]">
-                  <div>
-                    <div className="text-sm font-semibold text-slate-500">Topic Area</div>
-                    <h3 className="mt-2 text-2xl font-bold tracking-tight text-slate-950 md:text-3xl">
-                      {section.title}
-                    </h3>
-                    <p className="mt-4 max-w-2xl text-slate-700">
-                      {section.intro}
-                    </p>
-                  </div>
-
-                  <div>
-                    <div className="text-sm font-semibold text-slate-500">Suggested reads</div>
-                    <ul className="mt-4 space-y-3">
-                      {section.articles.map((article) => (
-                        <li
-                          key={article}
-                          className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800"
-                        >
-                          {article}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </section>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 to-indigo-950" />
-        <div className="mx-auto max-w-5xl px-6 py-16 text-center text-white md:py-20">
-          <h2 className="text-3xl font-extrabold tracking-tight md:text-5xl">
-            Want insight applied to your own environment?
-          </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-white/85 md:text-lg">
-            We help organizations turn engineering principles into real architecture, delivery,
-            and platform decisions that support long-term growth.
-          </p>
-
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex justify-center rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-slate-950 hover:bg-white/90 transition"
-            >
-              Start a Project
-            </Link>
-            <Link
-              href="/services"
-              className="inline-flex justify-center rounded-2xl border border-white/30 px-7 py-4 text-sm font-semibold hover:bg-white/10 transition"
-            >
-              Explore Services
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
+    </main>
   );
 }

@@ -1,6 +1,6 @@
 export const company = {
   name: "DTS Solutions",
-  tagline: "Practical technology solutions for growing businesses",
+  tagline: "Managed IT, cloud, cybersecurity and business technology support",
   website: "https://dtssolutions.com",
   phone: "+1 (000) 000-0000",
   emails: {
@@ -10,7 +10,7 @@ export const company = {
     careers: "careers@dtssolutions.com",
   },
   address: {
-    label: "DTS Solutions Office",
+    label: "DTS Solutions",
     line1: "Dallas, Texas",
     line2: "",
     city: "Dallas",

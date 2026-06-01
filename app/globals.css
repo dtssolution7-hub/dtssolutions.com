@@ -46,3 +46,11 @@ body { background: #ffffff; }
   -webkit-background-clip: text;
   color: transparent;
 }
+/* DTS Solutions brand polish */
+::selection { background: #2dd4bf; color: #07111f; }
+body { background: #ffffff; }
+.dts-gradient-text {
+  background: linear-gradient(90deg, #0f766e, #f97316);
+  -webkit-background-clip: text;
+  color: transparent;
+}

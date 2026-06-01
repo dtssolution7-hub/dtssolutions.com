@@ -1,98 +1,98 @@
 export const services = [
   {
     title: "Managed IT Support",
-    desc: "Reliable day-to-day technology support for users, devices, systems, and business operations.",
+    desc: "Responsive helpdesk, device support, user onboarding, system maintenance and everyday business IT assistance.",
     href: "/services#managed-it",
   },
   {
-    title: "Cloud & Microsoft 365",
-    desc: "Cloud migration, Microsoft 365 setup, email, collaboration, storage, identity, and productivity support.",
+    title: "Microsoft 365 & Cloud",
+    desc: "Email, Teams, SharePoint, OneDrive, cloud migration, access control and productivity platform support.",
     href: "/services#cloud",
   },
   {
     title: "Cybersecurity Protection",
-    desc: "Practical protection for accounts, devices, networks, backups, and business-critical systems.",
+    desc: "MFA, endpoint protection, secure access, email protection, backup readiness and practical risk reduction.",
     href: "/services#cybersecurity",
   },
   {
     title: "Network & Infrastructure",
-    desc: "Office networks, Wi-Fi, firewalls, servers, endpoints, and infrastructure improvements.",
+    desc: "Business Wi-Fi, firewalls, connectivity, servers, devices, documentation and office technology improvement.",
     href: "/services#infrastructure",
   },
   {
     title: "Backup & Recovery",
-    desc: "Business continuity planning, secure backups, disaster recovery readiness, and restore testing.",
+    desc: "Backup coverage, restore testing, disaster recovery planning and continuity protection for critical data.",
     href: "/services#backup",
   },
   {
-    title: "Business Automation",
-    desc: "Simple automations, workflows, dashboards, and integrations to reduce manual work.",
+    title: "Automation & Reporting",
+    desc: "Workflow automation, dashboards, forms, approvals, integrations and process improvements for daily operations.",
     href: "/services#automation",
   },
 ] as const;
 
 export const trustItems = [
-  "Fast response and practical support",
-  "Security-focused technology setup",
-  "Cloud and infrastructure experience",
-  "Clear communication without heavy jargon",
+  "Practical IT support for real business problems",
+  "Security-first setup without unnecessary complexity",
+  "Cloud, Microsoft 365 and infrastructure experience",
+  "Clear communication, documentation and ownership",
 ] as const;
 
 export const industries = [
   {
-    title: "Small & Mid-size Businesses",
-    desc: "Reliable IT foundations for growing teams that need dependable systems without enterprise complexity.",
+    title: "Small & Mid-size Business",
+    desc: "Reliable IT support for growing teams that need stability, security and responsive help.",
     href: "/industries#small-business",
   },
   {
     title: "Healthcare & Clinics",
-    desc: "Secure, privacy-aware technology support for clinics, practices, and care operations.",
+    desc: "Secure technology support for clinics, practices and care-focused teams.",
     href: "/industries#healthcare",
   },
   {
     title: "Professional Services",
-    desc: "Technology support for accounting, legal, real estate, consulting, and service-based firms.",
+    desc: "IT support for legal, accounting, real estate, finance and service-based offices.",
     href: "/industries#professional-services",
   },
   {
     title: "Retail & Local Operations",
-    desc: "Connectivity, devices, cloud tools, and support for customer-facing businesses.",
+    desc: "Connectivity, POS support, devices, cloud tools and day-to-day operational technology.",
     href: "/industries#retail",
   },
 ] as const;
 
 export const caseStudies = [
   {
-    title: "Office IT Modernization",
-    desc: "Improved devices, identity, email, backup, and network reliability for a growing business.",
-    href: "/case-studies#office-it",
+    title: "Business IT Cleanup",
+    desc: "Standardized devices, access, backups and documentation for a growing office.",
+    href: "/case-studies#business-it-cleanup",
   },
   {
     title: "Microsoft 365 Migration",
-    desc: "Moved business email and collaboration to a cleaner, more secure Microsoft 365 environment.",
-    href: "/case-studies#m365",
+    desc: "Moved email and collaboration into a cleaner, secure Microsoft 365 environment.",
+    href: "/case-studies#microsoft-365-migration",
   },
   {
     title: "Security & Backup Readiness",
-    desc: "Strengthened account security, endpoint protection, backup coverage, and recovery planning.",
-    href: "/case-studies#security-backup",
+    desc: "Improved MFA, endpoint protection, backup coverage and recovery readiness.",
+    href: "/case-studies#security-backup-readiness",
   },
 ] as const;
 
 export const insights = [
   {
-    title: "What Every Growing Business Should Secure First",
-    desc: "A practical checklist for passwords, email, backups, devices, and admin access.",
+    title: "What to Secure First in a Small Business",
+    desc: "Simple steps for email, passwords, MFA, backups, devices and admin access.",
     href: "/resources#security-basics",
   },
   {
-    title: "When to Move from Break-Fix IT to Managed Support",
-    desc: "Signs your business needs predictable technology support instead of reactive fixes.",
-    href: "/resources#managed-support",
+    title: "When Managed IT Support Makes Sense",
+    desc: "Signs your business has outgrown break-fix technology support.",
+    href: "/resources#managed-it",
   },
   {
-    title: "Cloud Tools That Make Daily Work Easier",
-    desc: "Simple ways Microsoft 365, storage, and automation can reduce operational friction.",
+    title: "How Cloud Tools Reduce Daily Friction",
+    desc: "Ways Microsoft 365, storage and automation can simplify business operations.",
     href: "/resources#cloud-tools",
   },
 ] as const;
